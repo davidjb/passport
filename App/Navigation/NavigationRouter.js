@@ -8,9 +8,8 @@ import NavItems from './NavItems'
 import PassFolderScreen from '../Containers/PassFolderScreen'
 import PassFileScreen from '../Containers/PassFileScreen'
 import AboutScreen from '../Containers/AboutScreen'
-import WebSCreen from '../Containers/WebScreen'
 
-// Boilerplate
+// Boilerplate from Ignite
 import PresentationScreen from '../Containers/PresentationScreen'
 import AllComponentsScreen from '../Containers/AllComponentsScreen'
 import UsageExamplesScreen from '../Containers/UsageExamplesScreen'

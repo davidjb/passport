@@ -1,5 +1,5 @@
 // An All Components Screen is a great way to dev and quick-test components
-import React, { PropTypes } from 'react'
+import React from 'react'
 import { ScrollView, View, Text, TouchableOpacity, Image } from 'react-native'
 import { Metrics, Images } from '../Themes'
 import FullButton from '../Components/FullButton'
