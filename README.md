@@ -84,7 +84,7 @@ Clicking on the name or password box will copy the respective contents to the pa
       npm install
    ```
 
-2. Run the build for either mobile OS.
+1. Run the build for either mobile OS.
 
    For iOS, run:
 
@@ -94,14 +94,15 @@ Clicking on the name or password box will copy the respective contents to the pa
 
       react-native run-android
 
-3. Optionally, install to your physical device using either Xcode or
+1. Optionally, install to your physical device using either Xcode or
    (Android).
 
 ## Contributing
 
-You're awesome -- all help is greatly appreciated!  Just fork and submit a
+All help is greatly appreciated!  Fork and submit a
 pull request on GitHub. For major changes or new features, consider opening
-an issue first for discussion; this may save you a bunch of time in coding!
+an issue first for discussion; this will save you time in coding by
+ensuring you're on the right path and your goals align with the project.
 
 If you're not sure where to start contributing, take a look at the
 [issue tracker](https://github.com/davidjb/pass-ios/issues)
@@ -135,23 +136,31 @@ here](https://github.com/yannickcr/eslint-plugin-react).
 
 ## Todo
 
+* Implement:
+
+  * gpg read/write
+  * Secure data management (keys, paswords, SSH/SFTP transport)
+
+* In-app configuration
+
+  * allow showing passwords on screen rather than copying
+  * whether to store passphrase in keychain
+  * passphrase storage duration (X minutes or forever)
+  * pasteboard reset time
+  * Identities
+  * Repositories / stores
+  * Metadata associated with each entry (colours, logos etc) -- read from file
+    itself?
+
 * Simplify initial setup
 
   * enter git repo url to clone
   * paste gpg key
-  * investigate becoming an official App Store app
+  * release to Apple App Store
 
 * Better details screen
 
   * Change UI table cells when displaying passwords (temporarily)
-
-* Configurable Settings
-
-  * allow showing passwords on screen rather than copying
-  * base directory location (other than /var/mobile/.password-store)
-  * whether to store passphrase in keychain
-  * passphrase storage duration (X minutes or forever)
-  * pasteboard reset time
 
 * Password editing / adding
 
