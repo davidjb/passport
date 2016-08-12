@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, ScrollView, Text, Image } from 'react-native'
 import { Actions as NavigationActions } from 'react-native-router-flux'
+import DeviceInfo from 'react-native-device-info'
 
 import RoundedButton from '../Components/RoundedButton'
 import { Images } from '../Themes'
@@ -28,7 +29,7 @@ export default class AboutScreen extends React.Component {
           <View style={styles.centered}>
             <Image source={Images.logo} style={styles.logo} />
             <Text style={styles.titleText}>Passport</Text>
-            <Text>A mobile port of pass, the standard unix password manager.</Text>
+            <Text>A cross-platform mobile port of pass, the standard unix password manager.</Text>
           </View>
 
           <RoundedButton onPress={this.viewOnGitHub}>
@@ -44,6 +45,7 @@ export default class AboutScreen extends React.Component {
           </RoundedButton>
 
           <View style={styles.centered}>
+            <Text style={styles.subtitleText}>v{DeviceInfo.getReadableVersion()}</Text>
             <Text>Made by @davidjb and contributors</Text>
             <Text>Licensed under the Apache License, Version 2.0</Text>
           </View>
