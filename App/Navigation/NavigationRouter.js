@@ -5,12 +5,17 @@ import NavigationDrawer from './NavigationDrawer'
 import NavItems from './NavItems'
 
 // screens identified by the router
+import PassFolderScreen from '../Containers/PassFolderScreen'
+import PassFileScreen from '../Containers/PassFileScreen'
+import AboutScreen from '../Containers/AboutScreen'
+import WebSCreen from '../Containers/WebScreen'
+
+// Boilerplate
 import PresentationScreen from '../Containers/PresentationScreen'
 import AllComponentsScreen from '../Containers/AllComponentsScreen'
 import UsageExamplesScreen from '../Containers/UsageExamplesScreen'
 import LoginScreen from '../Containers/LoginScreen'
-import ListviewExample from '../Containers/ListviewExample'
-import ListviewGridExample from '../Containers/ListviewGridExample'
+import ListviewExample from '../Containers/ListviewExample.js'
 import MapviewExample from '../Containers/MapviewExample'
 import APITestingScreen from '../Containers/APITestingScreen'
 import ThemeScreen from '../Containers/ThemeScreen'
@@ -26,12 +31,15 @@ class NavigationRouter extends Component {
       <Router>
         <Scene key='drawer' component={NavigationDrawer}>
           <Scene key='drawerChildrenWrapper' navigationBarStyle={Styles.navBar} titleStyle={Styles.title} leftButtonIconStyle={Styles.leftButton} rightButtonTextStyle={Styles.rightButton}>
-            <Scene initial key='presentationScreen' component={PresentationScreen} title='Ignite' renderLeftButton={NavItems.hamburgerButton} />
+            <Scene initial key='passFolderScreen' component={PassFolderScreen} title='Pass' rightTitle='Settings' onRight={() => window.alert('Password')} renderLeftButton={NavItems.hamburgerButton} />
+            <Scene key='passFileScreen' component={PassFileScreen} title='File Screen' rightTitle='Edit' onRight={() => window.alert('Edit Pressed')} />
+            <Scene key='aboutScreen' component={AboutScreen} title='About' />
+
+            <Scene key='presentationScreen' component={PresentationScreen} title='Ignite' renderLeftButton={NavItems.hamburgerButton} />
             <Scene key='componentExamples' component={AllComponentsScreen} title='Components' />
             <Scene key='usageExamples' component={UsageExamplesScreen} title='Usage' rightTitle='Example' onRight={() => window.alert('Example Pressed')} />
             <Scene key='login' component={LoginScreen} title='Login' hideNavBar />
             <Scene key='listviewExample' component={ListviewExample} title='Listview Example' />
-            <Scene key='listviewGridExample' component={ListviewGridExample} title='Listview Grid' />
             <Scene key='mapviewExample' component={MapviewExample} title='Mapview Example' />
             <Scene key='apiTesting' component={APITestingScreen} title='API Testing' />
             <Scene key='theme' component={ThemeScreen} title='Theme' />

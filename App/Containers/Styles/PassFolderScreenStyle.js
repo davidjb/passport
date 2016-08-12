@@ -9,24 +9,24 @@ export default StyleSheet.create({
     backgroundColor: Colors.background
   },
   row: {
-    width: 100,
+    width: 175,
     height: 100,
     justifyContent: 'center',
     alignItems: 'center',
     margin: Metrics.baseMargin,
-    backgroundColor: Colors.fire,
+    backgroundColor: Colors.primary,
     borderRadius: Metrics.smallMargin
   },
   boldLabel: {
     fontWeight: 'bold',
     alignSelf: 'center',
-    color: Colors.snow,
+    color: Colors.primaryInverse,
     textAlign: 'center',
     marginBottom: Metrics.smallMargin
   },
   label: {
     alignSelf: 'center',
-    color: Colors.snow,
+    color: Colors.primaryInverse,
     textAlign: 'center'
   },
   listContent: {

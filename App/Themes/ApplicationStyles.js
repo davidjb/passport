@@ -23,6 +23,9 @@ const ApplicationStyles = {
       flex: 1,
       paddingTop: Metrics.baseMargin
     },
+    centered: {
+      alignItems: 'center'
+    },
     section: {
       margin: Metrics.section,
       padding: Metrics.baseMargin,
@@ -37,11 +40,24 @@ const ApplicationStyles = {
       textAlign: 'center',
       fontWeight: 'bold'
     },
+    titleText: {
+      ...Fonts.style.h3,
+      marginBottom: Metrics.baseMargin
+    },
     subtitle: {
-      color: Colors.snow,
+      color: Colors.primary,
       padding: Metrics.smallMargin,
       marginBottom: Metrics.smallMargin,
       marginHorizontal: Metrics.smallMargin
+    },
+    subtitleInverse: {
+      color: Colors.primaryInverse,
+      padding: Metrics.smallMargin,
+      marginBottom: Metrics.smallMargin,
+      marginHorizontal: Metrics.smallMargin
+    },
+    muted: {
+      color: Colors.muted
     }
   },
   darkLabelContainer: {
@@ -66,7 +82,7 @@ const ApplicationStyles = {
     marginTop: Metrics.smallMargin,
     marginHorizontal: Metrics.baseMargin,
     borderWidth: 1,
-    borderColor: Colors.ember,
+    borderColor: Colors.primarySemiTransparent,
     alignItems: 'center',
     textAlign: 'center'
   }

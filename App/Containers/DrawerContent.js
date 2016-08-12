@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { ScrollView, Image } from 'react-native'
 import styles from './Styles/DrawerContentStyle'
 import { Images } from '../Themes'
@@ -9,6 +9,16 @@ class DrawerContent extends Component {
 
   toggleDrawer () {
     this.context.drawer.toggle()
+  }
+
+  handlePressHome = () => {
+    this.toggleDrawer()
+    NavigationActions.passFolderScreen()
+  }
+
+  handlePressAbout = () => {
+    this.toggleDrawer()
+    NavigationActions.aboutScreen()
   }
 
   handlePressComponents = () => {
@@ -40,6 +50,8 @@ class DrawerContent extends Component {
     return (
       <ScrollView style={styles.container}>
         <Image source={Images.logo} style={styles.logo} />
+        <DrawerButton text='Home' onPress={this.handlePressHome} />
+        <DrawerButton text='About' onPress={this.handlePressAbout} />
         <DrawerButton text='Component Examples' onPress={this.handlePressComponents} />
         <DrawerButton text='Usage Examples' onPress={this.handlePressUsage} />
         <DrawerButton text='API Testing' onPress={this.handlePressAPI} />

@@ -1,14 +1,13 @@
-import React, { PropTypes } from 'react'
-import { View, Text, ListView } from 'react-native'
+import React from 'react'
+import { View, Text, ListView, TouchableHighlight } from 'react-native'
+import { Actions as NavigationActions } from 'react-native-router-flux'
 import { connect } from 'react-redux'
 
-// For empty lists
 import AlertMessage from '../Components/AlertMessageComponent'
+import styles from './Styles/PassFolderScreenStyle'
+import Colors from '../Themes/Colors'
 
-// Styles
-import styles from './Styles/ListviewGridExampleStyle'
-
-class ListviewGridExample extends React.Component {
+class PassFolderScreen extends React.Component {
 
   constructor (props) {
     super(props)
@@ -18,13 +17,13 @@ class ListviewGridExample extends React.Component {
     * Usually this should come from Redux mapStateToProps
     *************************************************************/
     const dataObjects = [
-      {title: 'First Title', description: 'First Description'},
-      {title: 'Second Title', description: 'Second Description'},
-      {title: 'Third Title', description: 'Third Description'},
-      {title: 'Fourth Title', description: 'Fourth Description'},
-      {title: 'Fifth Title', description: 'Fifth Description'},
-      {title: 'Sixth Title', description: 'Sixth Description'},
-      {title: 'Seventh Title', description: 'Seventh Description'}
+      {title: 'eBay', description: 'ebay.com.au'},
+      {title: 'PayPal'},
+      {title: 'GitHub', description: 'Social coding'},
+      {title: 'Google', description: 'Mail and more'},
+      {title: 'Online Banking', description: 'My bank'},
+      {title: 'Amazon', description: 'amazon.com'},
+      {title: 'Work', description: 'Nested folder', type: 'folder'}
     ]
 
     /* ***********************************************************
@@ -40,7 +39,8 @@ class ListviewGridExample extends React.Component {
 
     // Datasource is always in state
     this.state = {
-      dataSource: ds.cloneWithRows(dataObjects)
+      dataSource: ds.cloneWithRows(dataObjects),
+      title: 'Home'
     }
   }
 
@@ -54,11 +54,18 @@ class ListviewGridExample extends React.Component {
   *************************************************************/
   _renderRow (rowData) {
     return (
-      <View style={styles.row}>
-        <Text style={styles.boldLabel}>{rowData.title}</Text>
-        <Text style={styles.label}>{rowData.description}</Text>
-      </View>
+      <TouchableHighlight style={styles.row} underlayColor={Colors.primaryDark} onPress={() => { NavigationActions.passFileScreen({title: rowData.title, filename: rowData.title + '.gpg'}) }}>
+        <View>
+          <Text style={styles.boldLabel}>{rowData.title}</Text>
+          <Text style={styles.label}>{rowData.description}</Text>
+          <Text style={styles.label}>{rowData.type}</Text>
+        </View>
+      </TouchableHighlight>
     )
+  }
+
+  _onPressButton () {
+    window.alert('Nice work!')
   }
 
   /* ***********************************************************
@@ -105,4 +112,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(ListviewGridExample)
+export default connect(mapStateToProps)(PassFolderScreen)

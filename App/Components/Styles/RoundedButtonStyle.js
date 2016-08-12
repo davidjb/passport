@@ -9,11 +9,11 @@ export default StyleSheet.create({
     borderRadius: 5,
     marginHorizontal: Metrics.section,
     marginVertical: Metrics.baseMargin,
-    backgroundColor: Colors.fire,
+    backgroundColor: Colors.primary,
     justifyContent: 'center'
   },
   buttonText: {
-    color: Colors.snow,
+    color: Colors.primaryInverse,
     textAlign: 'center',
     fontWeight: 'bold',
     fontSize: Fonts.size.medium,

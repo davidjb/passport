@@ -28,7 +28,7 @@ const style = {
     fontSize: size.h2
   },
   h3: {
-    fontFamily: type.emphasis,
+    fontFamily: type.base,
     fontSize: size.h3
   },
   h4: {

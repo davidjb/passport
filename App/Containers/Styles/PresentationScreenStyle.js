@@ -7,8 +7,5 @@ export default StyleSheet.create({
     height: Metrics.images.logo,
     width: Metrics.images.logo,
     resizeMode: 'contain'
-  },
-  centered: {
-    alignItems: 'center'
   }
 })
