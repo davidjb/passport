@@ -134,41 +134,7 @@ can be found with descriptions [here](http://eslint.org/docs/rules/), while
 [React errors and descriptions can be found
 here](https://github.com/yannickcr/eslint-plugin-react).
 
-## Todo
-
-* Implement:
-
-  * gpg read/write
-  * Secure data management (keys, paswords, SSH/SFTP transport)
-
-* In-app configuration
-
-  * allow showing passwords on screen rather than copying
-  * whether to store passphrase in keychain
-  * passphrase storage duration (X minutes or forever)
-  * pasteboard reset time
-  * Identities
-  * Repositories / stores
-  * Metadata associated with each entry (colours, logos etc) -- read from file
-    itself?
-
-* Simplify initial setup
-
-  * enter git repo url to clone
-  * paste gpg key
-  * release to Apple App Store
-
-* Better details screen
-
-  * Change UI table cells when displaying passwords (temporarily)
-
-* Password editing / adding
-
-  * auto-commit ala pass bash script
-  * trigger 'git pull' from app (also 'git push' after editing is implemented)
-
-* Android compatibility and testing
-
 ## Related Articles
 
 * [Ignite Documentation](https://github.com/infinitered/ignite/wiki)
+* <https://github.com/dabit3/react-native-fonts>
