@@ -7,6 +7,7 @@ const colors = {
   primarySemiTransparent: 'rgba(62, 155, 48, 0.5)',
   primaryInverse: '#fff',
   muted: '#999',
+  active: '#f1e05a',
   windowTint: 'rgba(0, 0, 0, 0.4)',
   dark: '#2d2d2d',
   light: '#fff',

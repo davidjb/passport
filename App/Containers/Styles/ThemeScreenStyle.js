@@ -43,8 +43,8 @@ export default StyleSheet.create({
   },
   colorName: {
     width: 100,
-    height: Metrics.doubleBaseMargin,
-    lineHeight: Metrics.doubleBaseMargin,
+    height: Metrics.largeMargin,
+    lineHeight: Metrics.largeMargin,
     color: Colors.charcoal,
     textAlign: 'center'
   },

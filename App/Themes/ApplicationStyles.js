@@ -42,13 +42,14 @@ const ApplicationStyles = {
     },
     titleText: {
       ...Fonts.style.h3,
-      marginBottom: Metrics.baseMargin
+      marginBottom: Metrics.baseMargin,
+      padding: Metrics.baseMargin
     },
-    subtitle: {
-      color: Colors.primary,
-      padding: Metrics.smallMargin,
-      marginBottom: Metrics.smallMargin,
-      marginHorizontal: Metrics.smallMargin
+    subtitleText: {
+      marginBottom: Metrics.baseMargin,
+      marginHorizontal: Metrics.baseMargin,
+      padding: Metrics.basePadding,
+      color: Colors.primary
     },
     subtitleInverse: {
       color: Colors.primaryInverse,
@@ -58,6 +59,13 @@ const ApplicationStyles = {
     },
     muted: {
       color: Colors.muted
+    },
+    textInput: {
+      ...Fonts.style.preformatted,
+      flex: 1,
+      justifyContent: 'flex-start',
+      padding: Metrics.basePadding,
+      backgroundColor: '#ccc'
     }
   },
   darkLabelContainer: {

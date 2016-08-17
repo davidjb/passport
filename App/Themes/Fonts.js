@@ -1,7 +1,21 @@
-const type = {
-  base: 'HelveticaNeue',
-  bold: 'HelveticaNeue-Bold',
-  emphasis: 'HelveticaNeue-Italic'
+import { Platform } from 'react-native'
+
+var type
+
+if (Platform.OS === 'ios') {
+  type = {
+    base: 'HelveticaNeue',
+    bold: 'HelveticaNeue-Bold',
+    emphasis: 'HelveticaNeue-Italic',
+    mono: 'Courier New'
+  }
+} else {
+  type = {
+    base: 'Roboto',
+    bold: 'Roboto',
+    emphasis: 'Roboto',
+    mono: 'monospace'
+  }
 }
 
 const size = {
@@ -24,6 +38,7 @@ const style = {
     fontSize: size.h1
   },
   h2: {
+    fontFamily: type.bold,
     fontWeight: 'bold',
     fontSize: size.h2
   },
@@ -50,6 +65,10 @@ const style = {
   description: {
     fontFamily: type.base,
     fontSize: size.medium
+  },
+  preformatted: {
+    fontFamily: type.mono,
+    fontSize: size.input
   }
 }
 
@@ -58,4 +77,3 @@ export default {
   size,
   style
 }
-

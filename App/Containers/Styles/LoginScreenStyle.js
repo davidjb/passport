@@ -12,8 +12,8 @@ export default StyleSheet.create({
     borderRadius: 4
   },
   row: {
-    paddingVertical: Metrics.doubleBaseMargin,
-    paddingHorizontal: Metrics.doubleBaseMargin
+    paddingVertical: Metrics.largePadding,
+    paddingHorizontal: Metrics.largePadding
   },
   rowLabel: {
     color: Colors.charcoal
@@ -27,8 +27,8 @@ export default StyleSheet.create({
     color: Colors.steel
   },
   loginRow: {
-    paddingBottom: Metrics.doubleBaseMargin,
-    paddingHorizontal: Metrics.doubleBaseMargin,
+    paddingBottom: Metrics.largePadding,
+    paddingHorizontal: Metrics.largePadding,
     flexDirection: 'row'
   },
   loginButtonWrapper: {

@@ -122,7 +122,7 @@ class UsageExamplesScreen extends React.Component {
         </View>
         {this.renderHeader(I18n.t('rnAnimatable'))}
         <View style={styles.groupContainer}>
-          <Animatable.Text animation='fadeIn' iterationCount='infinite' direction='alternate' style={styles.subtitle}>{I18n.t('rnAnimatable')}</Animatable.Text>
+          <Animatable.Text animation='fadeIn' iterationCount='infinite' direction='alternate' style={styles.subtitleText}>{I18n.t('rnAnimatable')}</Animatable.Text>
           <Animatable.Image animation='pulse' iterationCount='infinite' source={Images.logo} />
           <Animatable.View animation='jello' iterationCount='infinite' >
             <Icon name='cab' size={Metrics.icons.medium} color={Colors.snow} />

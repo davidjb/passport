@@ -4,7 +4,7 @@ import { Colors, Fonts, Metrics, ApplicationStyles } from '../../Themes/'
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
   loginBox: {
-    padding: Metrics.doubleBaseMargin
+    padding: Metrics.largePadding
   },
   loginButton: {
     borderWidth: 1,
