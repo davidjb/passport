@@ -5,7 +5,7 @@ export default StyleSheet.create({
   ...ApplicationStyles.screen,
   mainContainer: {
     ...ApplicationStyles.screen.mainContainer,
-    padding: Metrics.doubleBaseMargin
+    padding: Metrics.largeMargin
   },
   loginButton: {
     borderWidth: 1,

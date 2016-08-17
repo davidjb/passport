@@ -14,7 +14,7 @@ export default class WebScreen extends React.Component {
   render () {
     return (
       <View style={styles.mainContainer}>
-        <PassWebView uri={this.props.uri} />
+        <PassWebView source={{uri: this.props.uri}} />
       </View>
     )
   }

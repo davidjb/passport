@@ -28,7 +28,10 @@ export default class AboutScreen extends React.Component {
         <ScrollView style={styles.container}>
           <View style={styles.centered}>
             <Image source={Images.logo} style={styles.logo} />
-            <Text style={styles.titleText}>Passport</Text>
+            <Text>
+              <Text style={styles.titleText}>Passport</Text>
+              <Text style={styles.subtitleText}> v{DeviceInfo.getReadableVersion()}</Text>
+            </Text>
             <Text>A cross-platform mobile port of pass, the standard unix password manager.</Text>
           </View>
 
@@ -45,7 +48,6 @@ export default class AboutScreen extends React.Component {
           </RoundedButton>
 
           <View style={styles.centered}>
-            <Text style={styles.subtitleText}>v{DeviceInfo.getReadableVersion()}</Text>
             <Text>Made by @davidjb and contributors</Text>
             <Text>Licensed under the Apache License, Version 2.0</Text>
           </View>

@@ -19,10 +19,6 @@ ExamplesRegistry.add('Web View', () =>
 
 export default class PassWebView extends React.Component {
 
-  static propTypes = {
-    uri: React.PropTypes.string
-  }
-
   reload = () => {
     this.refs[WEBVIEW_REF].reload()
   }
@@ -56,8 +52,8 @@ export default class PassWebView extends React.Component {
   render () {
     return (
       <WebView
+        {...this.props} // Inherit props
         ref={WEBVIEW_REF}
-        source={{uri: this.props.uri}}
         startInLoadingState
         renderLoading={this.renderLoading}
         renderError={this.renderError}
