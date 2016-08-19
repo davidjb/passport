@@ -1,6 +1,6 @@
 # Passport
 
-![Icon](https://raw.github.com/davidjb/passport/master/App/Images/icon.svg)
+![Icon](https://raw.githubusercontent.com/davidjb/passport/master/App/Images/icon%403x.png)
 
 [![JavaScript Style
 Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
