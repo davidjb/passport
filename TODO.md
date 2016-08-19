@@ -3,7 +3,7 @@
 ## Dev processes
 
 * How to stay on the same flux screen on reload
-* Automated testing / unit testing
+* Automated testing / unit testing: Travis / Appveyor / Code quality / coverage etc
 * Release to Apple App Store & Google Play
 
 ## Features
