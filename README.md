@@ -1,4 +1,4 @@
-# Pass for iOS
+# Passport
 
 ![Icon](https://raw.github.com/davidjb/passport/master/App/Images/icon.svg)
 
@@ -6,7 +6,7 @@
 Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 View and manage your [pass password store](https://www.passwordstore.org/)
-passwords on your iOS or Android device.
+passwords on your iOS and Android devices.
 
 ## Features
 
@@ -99,40 +99,9 @@ Clicking on the name or password box will copy the respective contents to the pa
 
 ## Contributing
 
-All help is greatly appreciated!  Fork and submit a
-pull request on GitHub. For major changes or new features, consider opening
-an issue first for discussion; this will save you time in coding by
-ensuring you're on the right path and your goals align with the project.
-
-If you're not sure where to start contributing, take a look at the
-[issue tracker](https://github.com/davidjb/pass-ios/issues)
-to see the current list of bugs to solve or features to implement, and consult
-the todo list below.
-
-## Coding standards
-
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
-This project adheres to the JavaScript Standard Style.  Our CI enforces this,
-so we suggest you enable linting to keep your project compliant during
-development.
-
-### Linting on commit
-
-This is implemented using [ghooks](https://github.com/gtramontina/ghooks).
-There is no additional setup needed.
-
-### Bypassing linting
-
-If you have to bypass lint for a special commit that you will come back and
-clean (pushing something to a branch etc.) then you can bypass git hooks with
-adding `--no-verify` to your commit command.
-
-### Understanding linting errors
-
-The linting rules are from Standard and React-Standard.  Regular JS errors
-can be found with descriptions [here](http://eslint.org/docs/rules/), while
-[React errors and descriptions can be found
-here](https://github.com/yannickcr/eslint-plugin-react).
+Thanks, all help is greatly appreciated! Check out the
+[CONTRIBUTING.md](https://github.com/davidjb/passport/blob/master/CONTRIBUTING.md)
+for details on what to help with and how to easily get started.
 
 ## Related Articles
 
