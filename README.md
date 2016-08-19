@@ -4,6 +4,7 @@
 
 [![JavaScript Style
 Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 View and manage your [pass password store](https://www.passwordstore.org/)
 passwords on your iOS and Android devices.
