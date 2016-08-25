@@ -8,6 +8,7 @@ import NavItems from './NavItems'
 import PassFolderScreen from '../Containers/PassFolderScreen'
 import PassFileScreen from '../Containers/PassFileScreen'
 import AboutScreen from '../Containers/AboutScreen'
+import SettingsScreen from '../Containers/SettingsScreen'
 
 // Boilerplate from Ignite
 import PresentationScreen from '../Containers/PresentationScreen'
@@ -30,9 +31,10 @@ class NavigationRouter extends Component {
       <Router>
         <Scene key='drawer' component={NavigationDrawer}>
           <Scene key='drawerChildrenWrapper' navigationBarStyle={Styles.navBar} titleStyle={Styles.title} leftButtonIconStyle={Styles.leftButton} rightButtonTextStyle={Styles.rightButton}>
-            <Scene initial key='passFolderScreen' component={PassFolderScreen} title='Pass' rightTitle='Settings' onRight={() => window.alert('Password')} renderLeftButton={NavItems.hamburgerButton} />
+            <Scene initial key='passFolderScreen' component={PassFolderScreen} title='Pass' rightTitle='Settings' onRight={() => NavigationActions.settingsScreen()} renderLeftButton={NavItems.hamburgerButton} />
             <Scene key='passFileScreen' component={PassFileScreen} title='File Screen' rightTitle='Edit' onRight={() => window.alert('Edit Pressed')} />
             <Scene key='aboutScreen' component={AboutScreen} title='About' />
+            <Scene key='settingsScreen' component={SettingsScreen} title='Settings' />
 
             <Scene key='presentationScreen' component={PresentationScreen} title='Ignite' renderLeftButton={NavItems.hamburgerButton} />
             <Scene key='componentExamples' component={AllComponentsScreen} title='Components' />
