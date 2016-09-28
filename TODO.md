@@ -10,14 +10,19 @@
 
 * Files:
 
-  * Read/write
-  * GPG content read/write
-  * Generate passwords following pass structure
+  * Read/write files and folders in React Native
+  * GPG content read/write/encrypt/decrypt via kbgpg (?)
+  * Git management (commits, push, pull, history/logs, etc) via GitKit.js (?)
+  * Generate passwords following `pass` implementation
+  
+* GPG:
+
+  * Key management, loading and generation with kbgpg (see <https://keybase.io/kbpgp>)
 
 * Passwords:
 
   * Favouriting for home page
-  * Auto-commit Git on changes ala pass bash script
+  * Auto-commit Git on changes like the `pass` bash script
   * Ability to trigger 'git pull' from app (also 'git push' after editing is
     implemented; "sync")
   * Change commit in Git (git checkout)
