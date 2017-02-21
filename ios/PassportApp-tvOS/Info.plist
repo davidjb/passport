@@ -4,12 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>CFBundleDisplayName</key>
-	<string>PassportApp</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.davidjb.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -24,37 +22,6 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSAllowsArbitraryLoads</key>
-	<true/>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>localhost</key>
-			<dict>
-				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-			</dict>
-			<key>openweathermap.org</key>
-			<dict>
-				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-			</dict>
-		</dict>
-	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Entypo.ttf</string>
-		<string>EvilIcons.ttf</string>
-		<string>FontAwesome.ttf</string>
-		<string>Foundation.ttf</string>
-		<string>Ionicons.ttf</string>
-		<string>MaterialIcons.ttf</string>
-		<string>Octicons.ttf</string>
-		<string>Zocial.ttf</string>
-	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -66,7 +33,6 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
